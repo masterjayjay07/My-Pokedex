@@ -1,10 +1,12 @@
 import GlobalStyle from "./styles/global";
 import Routes from "./routes";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <div className="App">
       <GlobalStyle />
+      <Toaster position="top-right" reverseOrder={false} />
       <Routes />
     </div>
   );

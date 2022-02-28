@@ -11,17 +11,18 @@ export const Container = styled.div`
 export const InputContainer = styled.div`
   background: transparent;
   border-radius: 4px;
+  border: 1px solid #6495ed;
   width: 97%;
   padding: 1rem;
   display: flex;
-  margin: 8px 0;
+  margin: 10px 0;
   ${(props) =>
     props.isErrored &&
     css`
       border-color: var(--negative);
     `}
   input {
-    color: var(--grey2);
+    color: #6495ed;
     border: none;
     background: transparent;
     &::placeholder {
